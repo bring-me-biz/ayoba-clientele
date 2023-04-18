@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en-ZA">
+<head>
+    <meta charset="utf-8">
+    <title>Funeral Plans - Clientèle</title>
+    <meta name="robots" content="noindex, follow"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css"/>
+    <script src="static.js"></script>
+</head>
+<body>
+<script src="microapp.js"></script>
+<header>
+    <nav class="navbar">
+        <a class="navbar-brand" href="#">
+            <img src="mobile-logo.png" width="68px" height="43px">
+        </a>
+    </nav>
+</header>
+<div class="content">
+
+    <div class="funeral-image">
+        <img src="funeral.png" width="100px" alt="Clientele Funeral"/>
+    </div>
+    <h1 class="title">Clientèle Funeral Plan.</h1>
+
+    <p class="form-description">Complete the form below and one of our friendly consultants will call you back for a
+        quote.</p>
+
+    <form class="input-form" method="post" action="https://bmb-ayoba-clientele.ey.r.appspot.com">
+        <div class="field">
+            <input name="first_name" id="realname" type="text" value="" class="large" placeholder="Name" required>
+        </div>
+        <div class="field">
+            <input name="surname" id="surname" type="text" value="" class="large" placeholder="Surname" required>
+        </div>
+        <div class="field">
+            <input name="cellphone_number" id="cellphone_number" type="tel"
+                   value="" class="large" placeholder="Contact Number"
+                   pattern="^0(6[0123456789]|7[012346789]|8[0123456789])[0-9]{7}$"
+                   title="i.e 0812345678" required/>
+        </div>
+
+        <div class="field mt-14">
+            <div class="field-content">
+                <label>Select product*</label>
+                <select name="campaign_name" id="campaign_name" required>
+                    <option value="">Select product</option>
+                    <option value="funeral_dignity_plan" selected='selected'>Funeral Dignity Plan</option>
+                    <option value="ultimate_dignity_plan">Ultimate Dignity Plan</option>
+                </select>
+            </div>
+        </div>
+
+        <input class="button submit-button" type="submit" id="submit" name="button" value="Submit"/>
+
+        <div class="terms-and-conditions">
+            <input type="checkbox" id="optin" name="optin" value="1" class="" style="display:none !important"
+                   checked><span class="text"><i>By submitting your details you consent to Clientèle processing and retaining your personal information in line with their Privacy Policy which is available on: www.clientele.co.za</i></span>
+        </div>
+        <input type="hidden" name="successRedirect" id="successRedirect">
+        <input type="hidden" name="failedRedirect" id="failedRedirect">
+        <input type="hidden" name="currentUrl" id="currentUrl">
+    </form>
+
+    <div class="plan-group">
+        <div class="plan-button active">
+            <a><strong>Funeral Dignity Plan</strong></a>
+        </div>
+        <div class="plan-button">
+            <a><strong>Ultimate Dignity Plan</strong></a>
+        </div>
+        <div class="plan-button">
+            <a><strong>Compare Products</strong></a>
+        </div>
+    </div>
+
+    <div class="package-title-container">
+        <h2 class="package-title">Clientèle Funeral Dignity Plan</h2>
+    </div>
+
+    <div class="package-content-container">
+        <div class="package-content">
+            <div class="paragraph-and-price">
+                <p class="paragraph">In the unfortunate, but certain event of death, your family should not have to
+                    worry about the money for the funeral; this is why the Clientèle Funeral Dignity plan pays out
+                    within just 24 hours.</p>
+                <div class="floating-price">
+                    <div class="circle">
+                        <div class="price-from">From</div>
+                        <div class="price">R270</div>
+                        <div class="price-pm">
+                            <sup>p/m</sup>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <ul class="list">
+                <li>From R270 per month;</li>
+                <li>Pays between R30,000 and R100,000;</li>
+                <li>R110,000 family cover for less than R2 per person per day;</li>
+                <li>Cover up to 13 people on 1 plan;</li>
+                <li>Pays out within just 24 hours;</li>
+                <li>R200 airtime when you claim;</li>
+                <li>Includes a grocery and unveiling benefit;</li>
+                <li>Double Accidental death benefit for the main member;</li>
+                <li>Enhanced Benefits: You will have access to a 24 hour funeral helpline where professionals will
+                    assist you with various aspects of the funeral arrangements, like grief counselling, repatriation of
+                    the body and discounted rates with various funeral suppliers.
+                </li>
+            </ul>
+
+            <p class="note">NOTE: Applicable to existing and new policy holders.</p>
+        </div>
+    </div>
+
+    <div class="package-title-container">
+        <h2 class="package-title">Clientèle Ultimate Dignity Plan</h2>
+    </div>
+    <div class="package-content-container">
+        <div class="package-content">
+            <div class="paragraph-and-price">
+                <p class="paragraph">In the unfortunate, but certain event of death, your family should not have to
+                    worry about the money for the funeral; this is why the Clientèle Funeral Dignity plan pays out
+                    within just 24 hours. <br><br>The only funeral plan that pays back all your premiums. Your
+                    beneficiaries receive the full cover amount plus all the premiums for the deceased member, with a
+                    valid death claim.</p>
+                <div class="floating-price">
+                    <div class="circle">
+                        <div class="price-from">From</div>
+                        <div class="price">R290</div>
+                        <div class="price-pm">
+                            <sup>p/m</sup>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <ul class="list">
+                <li>From R290 per month;</li>
+                <li>Pays between R20,000 and R100,000;</li>
+                <li>Up to R50,000 individual cover;</li>
+                <li>Up to R500,000 family cover;</li>
+                <li>3 Children covered at no additional cost;</li>
+                <li>Pays within 24 hours;</li>
+                <li>R200 airtime when you claim;</li>
+                <li>Includes grocery, unveiling and transport benefit;</li>
+                <li>Cover up to 13 people on 1 plan;</li>
+                <li>24 Hour funeral helpline;</li>
+                <li>Half of your premiums back at age 65: Clientèle now gives you the option to receive 50% of your
+                    premiums back in cash at the age of 65. The money can be used to ease the pressure of not earning an
+                    income anymore. The remaining 50% of premiums paid will be paid back to the beneficiaries upon
+                    death. This benefit only applies to members who join before the age of 50.
+                </li>
+            </ul>
+
+            <p class="note">NOTE: Applicable to existing and new policy holders.</p>
+        </div>
+    </div>
+
+    <div class="package-title-container">
+        <h2 class="package-title">Compare Products</h2>
+    </div>
+
+    <div class="package-content-container">
+        <div class="package-content">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th scope="col">&nbsp;</th>
+                    <th scope="col"><strong>Clientèle Funeral Dignity Plan</strong></th>
+                    <th scope="col"><strong>Clientèle Ultimate Dignity Plan</strong></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><strong>No. of people you can cover</strong></td>
+                    <td>Cover up to 13 people on 1 plan</td>
+                    <td>Cover up to 13 people on 1 plan</td>
+                </tr>
+                <tr>
+                    <td><strong>Total Pay-out</strong></td>
+                    <td>Pays between R25,000 and R100,000</td>
+                    <td>Pays between R20,000 and R100,000</td>
+                </tr>
+                <tr>
+                    <td><strong>Standard Benefits</strong></td>
+                    <td>Grocery Benefit - R3,000<br>
+                        Unveiling Benefit - R2,000
+                    </td>
+                    <td>Grocery Benefit - R3,000<br>
+                        Unveiling Benefit - R2,000<br>
+                        Transport Benefit - R2,000
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Airtime Benefit</strong></td>
+                    <td>R200 Airtime</td>
+                    <td>R200 Airtime</td>
+                </tr>
+                <tr>
+                    <td><strong>Premium Pay Back Benefit</strong></td>
+                    <td>No</td>
+                    <td>Yes. Six month waiting period. Excludes children.</td>
+                </tr>
+                <tr>
+                    <td><strong>Funeral Assist Benefits through Europ Assistance</strong></td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                </tr>
+                <tr>
+                    <td><strong>Double Accidental death benefit for the main member</strong></td>
+                    <td>Yes</td>
+                    <td>No</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+<footer class="footer">
+
+    <div class="container">
+        <p>Life Insurance policies are underwritten by Clientèle Life Assurance Company Limited, a licensed life
+            insurer and an authorised Financial Services Provider, FSP no. 15268. Premiums escalate by 10% and
+            benefits escalate by 6% annually.
+        </p>
+        <p>Non-life insurance policies are underwritten by Clientèle General Insurance Limited, a licensed
+            non-life insurer and an authorised Financial Services Provider, FSP no. 34655. Premiums and benefits
+            escalate by 10% annually. The Rewards programmes are brought to you by CBC Rewards (Pty) Ltd. </p>
+        <p>Third parties are remunerated for their services to the brand. This website does not constitute
+            financial advice. </p>
+        <p>Terms and conditions apply (www.clientele.co.za) </p>
+        <br>
+        <br>
+        <div class="footer-logo">
+            <img src="icon-footer.png" class="img-fluid">
+        </div>
+    </div>
+
+</footer>
+
+<div style="display: none" id="logger"></div>
+<script>
+    consoletodiv('logger')
+    console.log('Logger loaded...')
+    var count = 1;
+    var skipDefer = false;
+
+    function defer(method) {
+        console.log('defer called: ', count++);
+        if (skipDefer) {
+            return;
+        }
+        try {
+            if (Ayoba && Ayoba.getMsisdn()) {
+                console.log('Ayoba loaded...');
+                method();
+                skipDefer = true;
+            } else {
+                console.log('Ayoba not read yet...');
+                setTimeout(function () {
+                    defer(method)
+                }, 50);
+            }
+        } catch (e) {
+            console.log('An error occurred', e.message);
+            setTimeout(function () {
+                defer(method)
+            }, 50);
+        }
+    }
+
+    function onPresenceChanged(presence) {
+        console.log("Event: presence changed:" + presence)
+        defer(function () {
+            var msisdn = Ayoba.getMsisdn();
+            var input = document.querySelector('#cellphone');
+            input.value = msisdn;
+
+            document.querySelector('#submit').style.display = 'block';
+        })
+    }
+
+    setTimeout(() => onPresenceChanged('manual presence trigger'), 10000)
+
+    var url = new URL(window.location.href);
+    const success = url.origin + url.pathname.replace('index.html', '') + 'success.html';
+    const failed = url.origin + url.pathname.replace('index.html', '') + 'failed.html';
+
+    var currentUrlInput = document.querySelector('#currentUrl');
+    currentUrlInput.value = window.location.href;
+
+    document.querySelector('#successRedirect').value = success;
+    document.querySelector('#failedRedirect').value = failed;
+
+</script>
+
+</body>
