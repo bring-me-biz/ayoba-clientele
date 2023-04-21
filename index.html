@@ -278,7 +278,7 @@
         defer(function () {
             var msisdn = Ayoba.getMsisdn();
             var input = document.querySelector('#cellphone_number');
-            input.value = msisdn;
+            input.value = (msisdn || '').replace('+27', '0');
 
             document.querySelector('#submit').style.display = 'block';
         })
