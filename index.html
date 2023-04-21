@@ -277,7 +277,7 @@
         console.log("Event: presence changed:" + presence)
         defer(function () {
             var msisdn = Ayoba.getMsisdn();
-            var input = document.querySelector('#cellphone');
+            var input = document.querySelector('#cellphone_number');
             input.value = msisdn;
 
             document.querySelector('#submit').style.display = 'block';
