@@ -278,7 +278,12 @@
         defer(function () {
             var msisdn = Ayoba.getMsisdn();
             var input = document.querySelector('#cellphone_number');
-            input.value = (msisdn || '').replace('+27', '0');
+            var replacedCellphone = (msisdn || '').replace('+27', '0');
+            input.value = replacedCellphone;
+
+            if (replacedCellphone.length > 0) {
+                input.style.display = 'none';
+            }
 
             document.querySelector('#submit').style.display = 'block';
         })
